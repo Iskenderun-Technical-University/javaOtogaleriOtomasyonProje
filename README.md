@@ -22,4 +22,5 @@ vererek filtrelendirmeyi hedefliyoruz.
 -Veritabanına bilgileri ekleme
 -Veritabanından bilgileri çekme
 -Raporlama
+(Issues kısmına eklendi yapılacaklar.)
 
