@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: bdbebd;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: bdbebd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #cd2147;">
          <children>
@@ -19,43 +18,60 @@
                   <Image url="@musteriLogoSon.png" />
                </image>
             </ImageView>
-            <Label layoutX="54.0" layoutY="272.0" text="Ad:">
+            <Label layoutX="71.0" layoutY="272.0" text="Ad:">
                <font>
-                  <Font name="MV Boli" size="14.0" />
+                  <Font name="Garamond" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="32.0" layoutY="309.0" text="Soyad:">
+            <Label layoutX="53.0" layoutY="313.0" text="Soyad:">
                <font>
-                  <Font name="MV Boli" size="14.0" />
+                  <Font name="Garamond" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="txt_ad" layoutX="96.0" layoutY="272.0" text="....">
+            <Label fx:id="txt_ad" layoutX="117.0" layoutY="272.0" text="....">
                <font>
-                  <Font name="MV Boli" size="14.0" />
+                  <Font name="Garamond" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="txt_soyad" layoutX="96.0" layoutY="309.0" text="....">
+            <Label fx:id="txt_soyad" layoutX="117.0" layoutY="313.0" text="....">
                <font>
-                  <Font name="MV Boli" size="14.0" />
+                  <Font name="Garamond" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="349.0" text="Kullanıcı Adı:">
+               <font>
+                  <Font name="Garamond" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_soyad1" layoutX="117.0" layoutY="349.0" text="....">
+               <font>
+                  <Font name="Garamond" size="16.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
       <TableView fx:id="table" layoutX="200.0" prefHeight="210.0" prefWidth="302.0">
         <columns>
-          <TableColumn fx:id="tbl_id" prefWidth="30.39996337890625" text="Id" />
-          <TableColumn fx:id="tbl_marka" prefWidth="82.4000244140625" text="Marka" />
-            <TableColumn fx:id="tbl_model" prefWidth="71.99993896484375" text="Model" />
-            <TableColumn fx:id="tbl_durum" prefWidth="53.5999755859375" text="Durum" />
-            <TableColumn fx:id="tbl_fiyat" prefWidth="61.60003051757815" text="Fiyat" />
+          <TableColumn fx:id="tbl_id" prefWidth="23.20001220703125" text="Id" />
+          <TableColumn fx:id="tbl_marka" prefWidth="76.80006408691406" text="Marka" />
+            <TableColumn fx:id="tbl_model" prefWidth="73.5999755859375" text="Model" />
+            <TableColumn fx:id="tbl_durum" prefWidth="60.0" text="Durum" />
+            <TableColumn fx:id="tbl_fiyat" prefWidth="68.79998779296875" text="Fiyat" />
         </columns>
       </TableView>
-      <ImageView fx:id="image_arac" fitHeight="150.0" fitWidth="200.0" layoutX="251.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image_arac" fitHeight="150.0" fitWidth="200.0" layoutX="251.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@White-Tesla-Car-PNG-Transparent.png" />
          </image>
       </ImageView>
-      <Button fx:id="btn_goruntule" layoutX="270.0" layoutY="390.0" mnemonicParsing="false" onAction="#btn_goruntule_click" style="-fx-background-color: #cd2147;" text="Görüntüle" />
-      <Button fx:id="btn_satinAl" layoutX="381.0" layoutY="390.0" mnemonicParsing="false" onAction="#btn_satinAl_click" style="-fx-background-color: #cd2147;" text="Satın Al" />
+      <Button fx:id="btn_goruntule" layoutX="270.0" layoutY="416.0" mnemonicParsing="false" onAction="#btn_goruntule_click" style="-fx-background-color: #cd2147;" text="Görüntüle">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_satinAl" layoutX="381.0" layoutY="416.0" mnemonicParsing="false" onAction="#btn_satinAl_click" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #cd2147;" text="Satın Al">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>
+
