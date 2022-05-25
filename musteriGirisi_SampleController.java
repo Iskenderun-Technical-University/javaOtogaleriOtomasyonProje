@@ -55,6 +55,9 @@ public class musteriGirisi_SampleController {
     private Label txt_soyad;
 
     @FXML
+    private Label txt_soyad1;
+
+    @FXML
     void btn_goruntule_click(ActionEvent event) {
 
     }
@@ -78,6 +81,7 @@ public class musteriGirisi_SampleController {
         assert tbl_model != null : "fx:id=\"tbl_model\" was not injected: check your FXML file 'musteriGirisi.fxml'.";
         assert txt_ad != null : "fx:id=\"txt_ad\" was not injected: check your FXML file 'musteriGirisi.fxml'.";
         assert txt_soyad != null : "fx:id=\"txt_soyad\" was not injected: check your FXML file 'musteriGirisi.fxml'.";
+        assert txt_soyad1 != null : "fx:id=\"txt_soyad1\" was not injected: check your FXML file 'musteriGirisi.fxml'.";
 
     }
 
