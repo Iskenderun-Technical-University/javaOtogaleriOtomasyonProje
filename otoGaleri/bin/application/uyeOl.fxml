@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_tum" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #cd2147;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.uyeOl_SampleController">
+   <children>
+      <Label layoutX="92.0" layoutY="135.0" text="Bilgilerinizi Giriniz:">
+         <font>
+            <Font name="Garamond" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_kullaniciAdi" alignment="CENTER" layoutX="93.0" layoutY="181.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: bdbebd;">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font></TextField>
+      <Label layoutX="11.0" layoutY="186.0" text="Kullanıcı Adı:">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="241.0" text="Şifre:">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_uyeOl" alignment="TOP_RIGHT" layoutX="131.0" layoutY="289.0" mnemonicParsing="false" onAction="#btn_uyeOl_click" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: bdbebd;" text="Üye Ol">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font></Button>
+      <ImageView fx:id="image" fitHeight="22.0" fitWidth="23.0" layoutX="131.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@uyeOl.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_sifre" alignment="CENTER" layoutX="93.0" layoutY="236.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: bdbebd;">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_yanEkranGetir" layoutX="31.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_yanEkranGetir_click" style="-fx-background-color: bdbebd;" text="&lt; &gt;">
+         <font>
+            <Font name="Garamond Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

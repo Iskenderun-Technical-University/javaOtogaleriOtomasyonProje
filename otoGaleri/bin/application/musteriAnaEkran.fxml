@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: bdbebd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.musteriAnaEkran_SampleController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #cd2147;">
+         <children>
+            <ImageView fx:id="image_kullanici" fitHeight="149.0" fitWidth="151.0" layoutX="26.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@musteriLogoSon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="241.0" text="Kullanıcı Adı:">
+               <font>
+                  <Font name="Garamond" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="275.0" text="Şifre:">
+               <font>
+                  <Font name="Garamond" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_ad" layoutX="124.0" layoutY="241.0" text="....">
+               <font>
+                  <Font name="Garamond" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_sifre" layoutX="120.0" layoutY="275.0" prefHeight="18.0" prefWidth="22.0" text="....">
+               <font>
+                  <Font name="Garamond" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_ayarlar" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="351.0" mnemonicParsing="false" onAction="#btn_ayarlar_click" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: bdbebd;">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="btn_cikis" alignment="BASELINE_RIGHT" layoutX="50.0" layoutY="408.0" mnemonicParsing="false" onAction="#btn_cikis_click" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: bdbebd;">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="btn_guncelle" layoutX="51.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn_guncelle_click" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: bdbebd;">
+               <font>
+                  <Font name="Garamond" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="34.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="91.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ayarlar%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="92.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@kapat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="90.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" editable="true" layoutX="200.0" layoutY="46.0" onMouseClicked="#table_mause_click" prefHeight="240.0" prefWidth="302.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="tbl_id" prefWidth="16.0" text="Id" />
+          <TableColumn fx:id="tbl_marka" prefWidth="41.60003662109375" text="Marka" />
+            <TableColumn fx:id="tbl_model" prefWidth="43.99993896484375" text="Model" />
+            <TableColumn fx:id="tbl_durum" prefWidth="27.20001220703125" text="Durum" />
+            <TableColumn fx:id="tbl_yil" prefWidth="25.60003662109375" text="Yıl" />
+            <TableColumn fx:id="tbl_yakit" prefWidth="33.60003662109375" text="Yakıt" />
+            <TableColumn fx:id="tbl_vites" prefWidth="32.79998779296875" text="Vites" />
+            <TableColumn fx:id="tbl_km" minWidth="4.79998779296875" prefWidth="26.39996337890625" text="Km" />
+            <TableColumn fx:id="tbl_kasaTipi" prefWidth="24.79998779296875" text="Kasa Tipi" />
+            <TableColumn fx:id="tbl_fiyat" minWidth="5.60003662109375" prefWidth="22.4000244140625" text="Fiyat" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_goruntule" layoutX="258.0" layoutY="294.0" mnemonicParsing="false" onAction="#btn_goruntule_click" style="-fx-background-color: #cd2147;" text="Görüntüle">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txt_marka" alignment="TOP_CENTER" layoutX="351.0" layoutY="331.0" prefHeight="27.0" prefWidth="118.0" promptText="Marka">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_id" alignment="TOP_CENTER" layoutX="216.0" layoutY="331.0" prefHeight="27.0" prefWidth="118.0" promptText="Id">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_model" alignment="TOP_CENTER" layoutX="216.0" layoutY="365.0" prefHeight="27.0" prefWidth="118.0" promptText="Model">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_durum" alignment="TOP_CENTER" layoutX="351.0" layoutY="366.0" prefHeight="27.0" prefWidth="118.0" promptText="Durum">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_satinAl" layoutX="360.0" layoutY="295.0" mnemonicParsing="false" onAction="#btn_satinAl_click" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #cd2147;" text="Satın Al">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_ara" alignment="TOP_CENTER" layoutX="228.0" layoutY="11.0" prefHeight="27.0" prefWidth="181.0" promptText="Aradığını kelimeyi girin.">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_ara" layoutX="436.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn_ara_click" style="-fx-background-color: #cd2147;" text="Ara">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_yil" alignment="TOP_CENTER" layoutX="216.0" layoutY="400.0" prefHeight="27.0" prefWidth="118.0" promptText="Yıl">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_yakit" alignment="TOP_CENTER" layoutX="350.0" layoutY="400.0" prefHeight="27.0" prefWidth="118.0" promptText="Yakıt">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_vites" alignment="TOP_CENTER" layoutX="216.0" layoutY="433.0" prefHeight="27.0" prefWidth="118.0" promptText="Vites">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_km" alignment="TOP_CENTER" layoutX="350.0" layoutY="434.0" prefHeight="27.0" prefWidth="118.0" promptText="Km">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_kasaTipi" alignment="TOP_CENTER" layoutX="216.0" layoutY="466.0" prefHeight="27.0" prefWidth="118.0" promptText="Kasa Tipi">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_fiyat" alignment="TOP_CENTER" layoutX="350.0" layoutY="466.0" prefHeight="27.0" prefWidth="118.0" promptText="Fiyat">
+         <font>
+            <Font name="Garamond" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
